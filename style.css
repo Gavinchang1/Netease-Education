@@ -1,0 +1,775 @@
+
+.f-fl{float: left;}
+.f-fr{float: right;}
+.f-pr{position: relative;}
+.f-cb:after{display: block;visibility: hidden;clear: both;overflow: hidden;height: 0; content: '.';}
+.minwidth{
+	min-width: 1600px;
+	margin: auto;
+}
+.model{
+	width: 1200px;
+}
+@media screen and (max-width: 1205px)
+{
+    .model
+    {
+        max-width: 960px;
+    }
+    .minwidth
+    {
+        min-width: 1300px;
+        margin: auto;
+    }
+	.m-list ul{
+		max-width: 1000px;
+	}
+    .g-mnc{
+    	max-width: 710px;
+    }
+    .m-work{
+    	right: -160px;
+    }
+}
+/*顶部通知条*/
+.g-tipbox{
+	width: 100%;
+	background-color: #f3f3f3;
+}
+
+.m-toptip{
+	margin: 0 auto;	
+	background-color: #f3f3f3;
+	font:  12px '微软雅黑';
+	padding: 10px 0 ;
+}
+
+.u-look{color: #85BC8B;}
+
+.u-look:hover{
+	text-decoration: underline;
+	color: #85BC8B;
+}
+.u-close:hover{
+	color:  #85BC8B;
+}
+/*头部logo与导航*/
+.m-tt{
+	margin: 35px auto;
+	height: 21px;
+	vertical-align: bottom;
+}
+.u-logo{
+	display: inline-block;
+	background:url(sprite.png) no-repeat 0 0;
+	height: 21px;
+	width: 240px;
+}
+.u-btn{
+	display: inline-block;	
+	cursor: pointer;
+}
+.u-btn .z-crt{	
+	border-radius: 2px;
+	border: 1px solid #21A557;
+	background: #21A557 ;
+	font: 12px 宋体;
+	padding: 0 9px 0 4px;
+	color: #fff;
+}
+.u-btn .z-crt span{
+	margin: 5px 0 5px 5px;
+}
+.u-btn .z-crt:hover{
+	background-color: #2FB556;
+}
+.u-btn .z-sel{
+	border-radius: 2px;
+	border: 1px solid #f3f3f3;
+	font: 12px '宋体';
+	background-color: #F8F8F8;
+	padding:0 4px;
+}
+.u-btn .z-sel:hover{
+	background-color: #fff;
+}
+.u-btn .z-sel span{
+	margin: 0 3px;
+}
+.u-btn .z-sel a{
+	color: #999999;
+	margin: 0 3px;
+}
+.u-btn .z-sel a:hover{
+	color:#21A557;
+	text-decoration: underline;
+}
+#fans{
+	margin: 3px 15px;
+	display: inline-block;	
+}
+#fans span{
+	margin: 0 3px;
+}
+.m-nav/*,.m-nav li*/{
+	display: inline-block;
+	/*margin: 0 0 0 28px ;*/
+	font: 16px/20px 'Hiragino Sans GB W3';
+	color: #666;
+
+	/*height: 28px;*/
+}
+.m-nav li{
+	display: inline-block;
+	margin-right: 28px;	
+}
+.m-nav li a:hover{
+	text-decoration: underline;
+	color:  #2FB556
+}
+#search a{
+	display: inline-block;
+	height: 20px;
+	width: 28px;
+	background: url(sprite.png) no-repeat 0 -132px;
+}
+#search a:hover{
+	background: url(sprite.png) no-repeat -27px -130px;
+}
+/*轮播图*/
+.g-slbox{
+	margin: 0 auto;
+	max-width: 1600px;
+}
+.m-slide
+{
+	position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+.m-slide ol,.m-slide li
+{
+    position: absolute;
+    z-index: 20;
+ 	top: 0;
+  	left: 0;
+    width: 100%;
+    height: 100%;
+}
+.m-slide li
+{
+    -webkit-transition: .5s ease-out;
+       -moz-transition: .5s ease-out;
+        -ms-transition: .5s ease-out;
+            transition: .5s ease-out;
+    -webkit-transition-property: opacity,left,top;
+       -moz-transition-property: opacity,left,top;
+        -ms-transition-property: opacity,left,top;
+            transition-property: opacity,left,top;
+    opacity: 0;
+}
+.m-slide li.z-crt
+{
+    z-index: 21;
+    opacity: 1;
+}
+.u-pointer
+{
+    line-height: 0;
+    position: absolute;
+    z-index: 50;
+    right: 0;
+    bottom: 70px;
+    left: 0;
+    text-align: center;
+}
+.u-pointer i
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 0 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #ccc;
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.5);
+}
+.u-pointer i:first-child{margin-left: 0;}
+.u-pointer i:hover{background: #999;}
+.u-pointer i.z-crt{background: #333333;}
+/*产品*/
+.m-list
+{
+    height: 230px;
+    padding: 1px 0 0;
+}
+.m-list ul
+{
+	width: 1200px;
+ 
+    height: 230px;
+    margin: 0 auto;
+}
+.m-list li
+{
+    display: inline-block;
+    width: 29%;
+    margin: 0.8% 6% 0 0;
+}
+.m-list li:last-child
+{
+    margin: 0.8% 0 0 0;
+}
+.u-img
+{
+    float: left;
+    width: 94px;
+    height: 94px;
+    margin-top: 5px;
+}
+
+.u-img a{
+	display: inline-block;
+	height: 85px;
+	width: 85px;
+}
+.u-img .u-icon0{background: url(sprite.png) no-repeat -5px -48px;}
+.u-img .u-icon1{background: url(sprite.png) no-repeat -89px -48px;}
+.u-img .u-icon2{background: url(sprite.png) no-repeat -175px -48px;}
+.m-list .txt
+{
+    float: right;
+    overflow: hidden;
+    width: 70%;
+    height: 230px;
+    margin-left: -70%;
+}
+.m-list h3.m-list p
+{
+    line-height: 18px;
+    overflow: hidden;
+    margin-left: 110px;
+}
+.m-list h3
+{
+    font: 22px/20px 微软雅黑;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    color: #333 ;
+}
+.m-list p,.more
+{
+    font: 14px/24px 微软雅黑;
+    color: #808080 ;
+}
+.more{
+	display: inline-block;
+	margin-top: 30px;
+}
+.more:hover{
+	text-decoration: underline;
+	color: #39A030;
+}
+/*工作区照片*/
+.g-workbox{
+max-width: 1600px;
+	height: 220px;
+	margin-top: 30px;
+	overflow: hidden;
+}
+.m-work{
+	width: 1600px;
+	box-sizing: border-box;
+	height: 220px;
+	
+	margin: 0 auto;
+	position: absolute;
+	z-index: 70;
+
+}
+
+.m-work img{
+	float: left;
+	width: 320px;
+}
+/*主体内容*/
+.g-mnbox{
+	width: 100%;
+	background-color: #f8f8f8;
+	padding-top: 60px;
+
+}
+.g-mn{
+	width:1200px;
+	margin: 0 auto;
+	background-color: #f8f8f8;
+}
+/*左侧课程*/
+.g-mnc{
+	width: 950px;
+	padding-bottom: 80px;
+	display: inline-block;
+	min-height: 1300px;
+
+}
+/*tab*/
+.u-tab{
+	height: 51px;
+	width: 400px;
+	box-shadow: 2px 2px #f3f3f3;
+	margin-bottom: 30px;
+
+	cursor: pointer;
+}
+.u-tab li{
+	box-sizing: border-box;
+	height: 51px;
+	width:200px;
+	float: left;
+	font: 20px/22px 微软雅黑;
+	text-align:center;
+	vertical-align: middle;
+	padding: 15px 0;
+	background-color: #fff;
+}
+.u-tab .z-select{
+	background-color: #3AA030;
+	color: #fff;
+}
+/*小课程卡片*/
+.smallCard{
+	width: 224px;
+	height: 230px;
+	display: inline-block;
+	box-shadow: 1px 1px #f1f1f1;
+	background-color: #fff;
+	margin:0 6px  40px 6px;
+}
+.smallCard img{
+	width: 223px;
+	height: 122px;
+}
+.name{
+	font: 12px/16.8px 微软雅黑;
+	display: block;
+	margin: 5px 0 5px 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.provider,.categoryName{
+	font: 12px/16.8px 微软雅黑;
+	color: #999;
+	margin: 8px 5px; 
+}
+.learnCounter{
+	display: inline-block;
+	padding:0 4px 0 18px;
+	border: 1px  solid #e1e1e1;
+	border-radius: 3px;
+	/*width: 70px;*/
+	height: 17px;
+	font: 12px/16.8px 微软雅黑;
+	color: #999;
+	background: url(sprite.png) no-repeat -290px 4px;
+	margin-left: 5px;
+
+}
+.price{
+	color: #ff3f00;
+	font: 12px/12px 微软雅黑;
+	margin:8px 5px;
+}
+/*课程详情卡片*/
+.bigCard{
+	position: absolute;
+	z-index: 100;
+	width: 480px;
+	/*height: 245px;*/
+	border: 2px solid #d6d6d6;
+	top:0;
+	left:0;
+	display: none;
+
+}
+.smallCard:hover .bigCard{
+	display: block;
+}
+
+.bigCard .learnCounter{
+	border: none;
+	margin-bottom: 7px;
+}
+.dtbox{
+	height: 180px;
+	width: 480px;
+	background-color: #fff;
+}
+.dtbox img{
+	margin: 19px;
+}
+.detail{
+	background-color: #fff;
+	display: inline-block;
+	width: 45%;
+	height: 100%;
+}
+.detail .name{
+	font:   18px/20px 微软雅黑;
+	margin: 15px 0;
+	color: #333;
+}
+
+.description{
+	background-color: #f8f8f8;
+	font: 14px/24px 微软雅黑;
+	color: #666;
+	letter-spacing: 2px;
+	padding: 20px;
+	/*height: 65px;*/
+
+}
+/*翻页器*/
+.m-page
+{
+    font-size: 0;
+    line-height: 32px;
+
+    margin: 30px 0 0;
+
+    text-align: right;
+    white-space: nowrap;
+    letter-spacing: -.307em;
+    word-wrap: normal;
+
+    color: #666;
+}
+.m-page a,.m-page li
+{
+    font: 14px/20px 微软雅黑;
+
+    display: inline-block;
+
+    margin-left: 2px;
+    padding: 0 12px;
+
+    -webkit-transition: background-color .3s;
+       -moz-transition: background-color .3s;
+        -ms-transition: background-color .3s;
+            transition: background-color .3s;
+    vertical-align: top;
+    letter-spacing: normal;
+
+    background: #f8f8f8;
+    text-shadow: 0 1px #fff;
+}
+.m-page .pagenxt,
+.m-page .pageprv
+{
+    color: #fff;
+    background: #9dd8b1;
+}
+.m-page .pageprv
+{
+    margin-left: 0;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.m-page .pagenxt
+{
+    margin-right: 0;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.m-page li.pageprv:before,
+.m-page li.pagenxt:after
+{
+    font-family: \5b8b\4f53;
+    font-weight: bold;
+
+    vertical-align: top;
+}
+.m-page li.pageprv:before
+{
+    margin-right: 3px;
+
+    content: '\3C';
+}
+.m-page li.pagenxt:after
+{
+    margin-left: 3px;
+
+    content: '\3E';
+}
+.m-page a:hover,.m-page li:hover
+{
+    color: #9dd8b1;
+}
+.m-page a:active,.m-page li:active
+{
+    color: #fff;
+    background: #9dd8b1;
+}
+.m-page a.z-crt,
+.m-page a.z-crt:hover,
+.m-page a.z-crt:active,
+.m-page li.z-crt,
+.m-page li.z-crt:hover,
+.m-page li.z-crt:active
+{
+    cursor: default;
+
+    color: #fff;
+    background: #9dd8b1;
+}
+/*右侧栏*/
+aside{
+	width: 225px;
+	display: inline-block;
+	background-color: #f8f8f8;
+}
+hr{
+	
+	border-top: 1px solid #ddd;
+	margin: 20px 0;
+}
+/*机构介绍*/
+.media{
+	
+	width: 100%;
+	height: 230px;
+	border-width: 0 2px 2px 2px;
+	border-style: solid;
+	border-color: #ecebeb;
+	background-color: #fff;
+}
+
+.media h2{
+	font: 16px/22px 微软雅黑;
+	color: #333;
+	margin: 20px;
+
+}
+.media h3{
+	font: 14px/22px 微软雅黑;
+	color:  #666;
+	margin: 20px 0 0 20px;
+
+}
+.media img{
+	margin: 10px 20px 20px 20px;
+}
+/*热门排行*/
+.m-hot{
+	margin-top: 25px;
+	background-color: #fff;
+	padding-top: 20px;
+}
+.m-hot h3{
+	font: 16px/22px 微软雅黑;
+	color:#333;
+	margin-left: 20px;
+}
+/*滚动*/
+.scrollbox{
+	width: 227px;
+	height: 880px;
+	overflow: hidden;
+	background-color: #fff;
+
+}
+.scroll{
+	
+	position: absolute;
+	z-index: 90;	
+}
+.u-hot{
+	display: block;
+	height: 90px;
+}
+.smallph{margin: 10px;}
+.smallph img{
+	width: 52px;
+	height: 52px;
+}
+.hottxt{
+	width: 225px;
+	box-sizing: border-box;
+	margin-left: -72px;
+	margin-top: 5px;
+	padding-left: 72px;
+}
+.hottxt .name{
+	margin-top: 5px;
+}
+.hottxt .learnCounter{
+	border:none;
+	margin: 10px 0;
+}
+.u-copy{
+	font: 12.5px/25px 微软雅黑;
+	color: #a2a4a5;
+	margin-top: 3px;
+	margin-left: 5px;
+}
+/*底部*/
+footer{
+	background-color: #2C3339;
+	height: 251px;
+	padding-top: 70px;
+	box-sizing: border-box;
+
+}
+.g-ft{
+	margin:0 auto;
+	height: 100%;
+}
+/*左侧logo与版权信息*/
+.g-ftl{
+	width: 50%;
+	margin-top: 15px;
+}
+.g-ftl .u-logo{
+	background-position: 3px -182px;
+	height: 24px;
+	margin-bottom: 15px;
+}
+/*右侧关于*/
+.g-ftr{
+	width: 50%;
+	height: 120px;
+}
+
+.g-ftr p,.g-ftr a {
+	font-family: 微软雅黑;
+	line-height: 29.17px;
+	color: #a2a4a5;
+}
+.g-ftr ul{
+	display: inline-block;
+	margin-right: 10%;
+	height: 120px;
+	vertical-align:text-top;
+}
+.g-ftr ul a{
+	font-size: 14px;
+}
+.g-ftr ul a:hover{
+	text-decoration: underline;
+}
+#sina{
+	background:  url(sina.jpg) no-repeat 35px 5px;
+	width: 60px;
+}
+/*遮罩层*/
+.mask{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(50,50,50 ,0.5);
+}
+/*视频弹窗*/
+.videobox{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 101;
+	top: 0;
+	left: 0;
+	
+}
+.g-vbc{
+position: fixed;
+z-index: 102;
+left: 20%;
+top:10%;
+background-color: #fff;
+width: 950px;
+height: 680px;
+padding:0 30px 30px 30px;
+box-sizing: border-box;
+font: 18px/28px 微软雅黑;
+color:#444;
+}
+.g-vbc p{
+	margin-top: 20px;
+	display: inline-block;
+	width: 50%;
+}
+
+video{
+	width: 891px;
+	height: 567px;
+	margin: 0 auto;
+
+}
+.g-vbc .u-close,.loginbox .u-close{
+	margin: 10px;
+}
+/*登录弹窗*/
+.loginbox{
+	position: fixed;
+	z-index: 200;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+}
+.u-login{
+	box-sizing: border-box;
+	height: 290px;
+	width: 386px;
+	background-color: #fff;
+	position: fixed;
+	z-index: 201;
+	left: 35%;
+	top: 30%;
+	padding: 0 0 38px 38px;
+	font: 18px/28px 微软雅黑;
+}
+.u-login p{
+	
+	color: #444;
+	margin-top: 30px;
+}
+.loginmessage{
+	color: #FF0000;
+	margin: 0;
+	display: block;
+	width: 293px;
+	height: 28px;
+
+}
+.u-login input ,.u-login button{
+	display: block;
+	width: 293px;
+	height: 46px;
+	
+}
+.u-login input{
+	margin-top: 15px;
+	background-color: #fafafa;
+	box-shadow: -1px -1px #f1f1f1;
+	border: 1px solid #dfdfdf;
+	padding-left: 10px;
+	
+}
+.u-login input::placeholder{
+	font: 16px/28px 微软雅黑;
+	color:#ccc;
+}
+.u-login input::-webkit-input-placeholder{
+	font: 16px/28px 微软雅黑;
+	color:#ccc;
+}
+.u-login input::-ms-input-placeholder{
+	font: 16px/28px 微软雅黑;
+	color:#ccc;
+}
+
+.u-login button{
+	font-size: 16px;
+	color: #fff;
+	background: url(sprite.png) no-repeat 0px -245px; 
+}
